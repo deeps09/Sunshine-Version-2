@@ -8,6 +8,7 @@
     -->
     <string name="app_name">Sunshine</string>
 
+    <string name="no_data_available">No weather information available</string>
     <!--
          By convention, "action" denotes that this String will be used as the label for an Action,
          typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
@@ -39,6 +40,14 @@
     <string name="pref_enable_notifications_default" translatable="false">true</string>
 
     <!-- Strings for formatting weather-related data -->
+    
+    <!--Key for stating location status using IntDef annotation-->
+    <string name="pref_status_location_key">status_key</string>
+
+    <string name="empty_forecast_list">No Weather Information Available</string>
+    <string name="empty_forecast_list_no_network">No weather information available. The network is not available to fetch weather data.</string>
+    <string name="empty_forecast_list_server_down">No weather information available. The server is not returning data.</string>
+    <string name="empty_forecast_list_server_error">No weather information available. The server is not returning valid data. Please check for an updated version of Sunshine.</string>
 
     <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
     <string name="pref_units_label">Temperature Units</string>
