@@ -9,6 +9,8 @@
     <string name="app_name">Sunshine</string>
 
     <string name="no_data_available">No weather information available</string>
+
+
     <!--
          By convention, "action" denotes that this String will be used as the label for an Action,
          typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
@@ -81,6 +83,9 @@
     <!-- Temperature format [CHAR LIMIT=5 -->
     <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
 
+    <!-- Format for retrieving art from an external source [CHAR LIMIT=NONE] -->
+    <string name="format_art_url" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-xxhdpi/art_<xliff:g id="description">%s</xliff:g>.png</string>
+
     <!-- Windspeed formats -->
     <!-- Wind in mph [CHAR LIMIT=25] -->
     <string name="format_wind_mph">Wind: <xliff:g id="speed">%1$1.0f</xliff:g> mph <xliff:g id="direction">%2$s</xliff:g></string>
@@ -102,5 +107,21 @@
 
     <!-- Strings related to Notification preference -->
     <string name="pref_last_notification">last_notification</string>
+
+    <!-- Strings used when displaying the state of the Location in settings -->
+    <string name="pref_location_error_description">Invalid Location (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
+    <string name="pref_location_unknown_description">Validating Location... (<xliff:g id="location_setting">%1$s</xliff:g>)"</string>
+
+    <!--Strings related to image preferences-->
+    <string name="pref_icons_title">Weather Icons</string>
+    <string name="pref_icons_key">icons_key</string>
+
+    <string name="pref_sunshine_icon_pack_entry">Sunshine</string>
+    <string name="pref_cutedogs_icon_pack_entry">Cute Dogs</string>
+
+    <string name="pref_sunshine_icon_pack_value" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-xxhdpi/art_%s.png</string>
+    <string name="pref_cutedogs_icon_pack_value" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-mdpi/art_%s.png</string>
+
+    <string name="gcm_weather_alert">Heads up: %1$s in %2$s!</string>
 
 </resources>

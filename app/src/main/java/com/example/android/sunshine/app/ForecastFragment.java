@@ -255,7 +255,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
         // This is called when a new Loader needs to be created.  This
         // fragment only uses one loader, so we don't care about checking the id.
 
-        // To only show current and future dates, filter the query to return weather only for
+           // To only show current and future dates, filter the query to return weather only for
         // dates after or including today.
 
         // Sort order:  Ascending, by date.

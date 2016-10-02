@@ -15,6 +15,7 @@
  */
 package com.example.android.sunshine.app;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
@@ -32,6 +33,7 @@ import android.preference.PreferenceManager;
  * href="http://developer.android.com/guide/topics/ui/settings.html">Settings
  * API Guide</a> for more information on developing a Settings UI.
  */
+
 public class SettingsActivity extends PreferenceActivity
         implements Preference.OnPreferenceChangeListener {
 
@@ -45,6 +47,7 @@ public class SettingsActivity extends PreferenceActivity
         // updated when the preference changes.
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_units_key)));
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_icons_key)));
     }
 
     /**
@@ -88,4 +91,8 @@ public class SettingsActivity extends PreferenceActivity
     public Intent getParentActivityIntent() {
         return super.getParentActivityIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
+
+
+
+
 }
